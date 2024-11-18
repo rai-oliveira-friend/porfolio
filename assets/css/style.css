@@ -2093,3 +2093,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .disabled-btn {
   display: none;
 }
+
+b {
+  font-weight: 800 !important;
+}
