@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .download-btn {
+      display: flex;
+      width: 15em;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 20px;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 50px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.7s ease;
+
+    }
+
+
+    .download-btn:hover {
+      background-color: #fed793;
+      font-size: 17px;
+      transition: background-color 0.7s ease;
+      color: black;
+
+    }
+  </style>
+  <title>Raimundo's Portfolio</title>
+
+  <link rel="shortcut icon" href="2.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,600&display=swap" rel="stylesheet">
+</head>
+
+<body bgcolor="black">
+
+  <button class="portfolio-back disabled-btn" id="portfolio-back-button" title="Click here to go back">
+    <ion-icon name="arrow-up" title="Click here to go back" role="img" class="md hydrated" aria-label="arrow up"></ion-icon>
+  </button>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <img src="./assets/images/Oliveira.png" alt="Jose Raimundo Oliveira da Silva" width="80" style="border-radius: 50%;">
+
+
+        <div class="info-content">
+          <h1 class="name" title="Jose Raimundo Oliveira da Silva">Raimundo Oliveira</h1>
+
+          <p class="title">Full Stack Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:joseoliveira5244@gmail.com" class="contact-link">joseoliveira5244@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+55 (61) 99 586 212" class="contact-link">+55 (61) 99 586 212</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="12-01-2003">January 30, 1994</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Quadra 803. Conjunto 11, Brasilia Federal District, Brazil</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/jose-raimundo-oliveira-da-silva/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+
+          <li class="social-item">
+            <a href="https://github.com/silverstelth" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#joseraimundooliveira" class="social-link">
+              <ion-icon name="logo-discord"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Certificate</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hello, I have over 9 years of experience in software engineering with a focus on full stack web development.
+          </p>
+
+          <p>
+            I graduated with a Bachelor's degree in software development from the Hong Kong University of science and technology, where I learned and applied various concepts and techniques in programming languages, data structures, algorithms, artifical intelligence, and computer graphics. I have skills in real-time update single-page applications, c++, javascript and python. I am passionate about creating innovative and user-friendly software products that can enhance the quality and development speed.
+I enjoy working with diverse and collaborative team of engineers, designers, and product managers, and I always strive to deliver high-quality and reliable solutions that meet the needs and expectations of our customers.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 article-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">App development</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for Android and Applications.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!--
+          - testimonials
+        -->
+
+        <!-- <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li> -->
+
+        <!-- <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li> -->
+
+        <!-- <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li> -->
+
+            <div class="modal-container" data-modal-container>
+
+              <div class="overlay" data-overlay></div>
+    
+              <section class="testimonials-modal">
+    
+                <button class="modal-close-btn" data-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+    
+                <!-- <div class="modal-img-wrapper">
+                  <figure class="modal-avatar-box">
+                    <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+                  </figure>
+    
+                  <img src="./assets/images/icon-quote.svg" alt="quote icon">
+                </div> -->
+    
+                <div class="modal-content">
+    
+                  <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+    
+                  <time datetime="2021-06-14">14 June, 2021</time>
+    
+                  <div data-modal-text>
+                    <p>
+                      Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                      lot of experience
+                      and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                      consectetur adipiscing
+                      elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                    </p>
+                  </div>
+    
+                </div>
+    
+              </section>
+    
+            </div>
+    
+    
+            <!--
+              - clients
+            -->
+    
+            <!-- <section class="clients">
+    
+              <h3 class="h3 clients-title">Clients</h3>
+    
+              <ul class="clients-list has-scrollbar">
+    
+                <li class="clients-item">
+                  <a href="#">
+                    <img src="./assets/images/logo-1-color.png" alt="client logo">
+                  </a>
+                </li>
+    
+                <li class="clients-item">
+                  <a href="#">
+                    <img src="./assets/images/logo-2-color.png" alt="client logo">
+                  </a>
+                </li>
+    
+                <li class="clients-item">
+                  <a href="#">
+                    <img src="./assets/images/logo-3-color.png" alt="client logo">
+                  </a>
+                </li>
+    
+                <li class="clients-item">
+                  <a href="#">
+                    <img src="./assets/images/logo-4-color.png" alt="client logo">
+                  </a>
+                </li>
+    
+                <li class="clients-item">
+                  <a href="#">
+                    <img src="./assets/images/logo-5-color.png" alt="client logo">
+                  </a>
+                </li>
+    
+                <li class="clients-item">
+                  <a href="#">
+                    <img src="./assets/images/logo-6-color.png" alt="client logo">
+                  </a>
+                </li>
+    
+              </ul>
+    
+            </section> -->
+    
+
+
+        <!--
+          - main skill
+        -->
+        <h3 class="h3 mb-4 article-title">Main Skill</h3>
+
+        <section class="main-skills">
+
+          <div class="text-left flex flex-col gap-8">
+            <div class="">
+              <h4 class="text-xl font-bold text-orange-300">Language</h4>
+              <ul class="list-none flex gap-4 text-white flex-wrap">
+                <li class="">C#</li>
+                <li class="">Javascript</li>
+                <li class="">Typescript</li>
+                <li class="">Python</li>
+                <li class="">PHP</li>
+                <li class="">GraphQL</li>
+              </ul>
+            </div>
+
+            <div class="">
+              <h4 class="text-xl font-bold text-orange-300">Frameworks</h4>
+              <ul class="list-none flex gap-4 text-white flex-wrap">
+                <li class="">Node</li>
+                <li class="">Express</li>
+                <li class="">Laravel</li>
+                <li class="">Flask</li>
+                <li class="">React</li>
+                <li class="">Next</li>
+                <li class="">Apollo GraphQL</li>
+              </ul>
+            </div>
+
+            <div class="">
+              <h4 class="text-xl font-bold text-orange-300">Testing</h4>
+              <ul class="list-none flex gap-4 text-white flex-wrap">
+                <li class="">Unit Testing</li>
+                <li class="">Mocha</li>
+                <li class="">Jest</li>
+              </ul>
+            </div>
+
+            <div class="">
+              <h4 class="text-xl font-bold text-orange-300">Tools</h4>
+              <ul class="list-none flex gap-4 text-white flex-wrap">
+                <li class="" title="Don't Repeat Yourself">Git</li>
+                <li class="" title="Keep It Simple, Stupid">
+                  Jira/Trello/Assana
+                </li>
+                <li class="" title="Test Driven Development">
+                  Clickup
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+
+        <!-- <a href="Raimundo_Javiya_resume.pdf" class="download-btn" download> 📎 &nbsp; Download CV</a> -->
+
+
+
+        <a href="Raimundo_resume_v1.0_11162024.pdf" class="download-btn" download>
+          <img src="./assets/images/icon-resume.png" alt="Icon" class="icon">
+          <p>Download CV</p>
+        </a>
+
+
+        <br>
+        <br>
+
+        <section class="timeline"> 
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h3 class="timeline-item-title font-bold text-2xl">Plasbit, Warsaw Poland</h3>
+              <h4 class="h4 timeline-item-position">Full Stack Engineer</h4>
+              <span>Oct 2022 — Sep 2024</span>
+
+              <ul class="timeline-text">
+                <li>
+                  Engineered backend systems with <b>Node.js</b> and
+                  <b>Express.js</b>, boosting system performance by
+                  <b>30%</b> and slashing server response time by <b>50%</b>.
+                </li>
+                <li>
+                  Spearheaded the development of <b>RESTful APIs</b> with
+                  <b>Express.js</b>, leveraging <b>Swagger</b> for
+                  documentation, enhancing integration speed by
+                  <b>40%</b> with Plasbit's encrypted products.
+                </li>
+                <li>
+                  Optimized database management with <b>Mongoose</b> and
+                  <b>MongoDB</b>, reducing query response time by <b>20%</b>.
+                </li>
+                <li>
+                  Pioneered the transition to microservices architecture using
+                  <b>Docker</b> and <b>Kubernetes</b>, increasing scalability
+                  and lowering infrastructure costs by <b>25%</b>.
+                </li>
+                <li>
+                  Introduced service mesh solutions with <b>Istio</b>,
+                  improving <b>microservices</b> communication latency by
+                  <b>15%</b> and reducing security incidents by <b>40%</b>.
+                </li>
+                <li>
+                  Integrated <b>GraphQL</b> for data queries, decreasing data
+                  retrieval time by <b>35%</b>.
+                </li>
+                <li>
+                  Enhanced caching strategies with <b>Redis</b>, reducing data
+                  access times by <b>50%</b>.
+                </li>
+                <li>
+                  Built CI/CD pipelines using <b>Jenkins</b>, cutting
+                  deployment time by <b>70%</b> and doubling deployment
+                  frequency.
+                </li>
+                <li>
+                  Implemented distributed tracing with <b>Jaeger</b>,
+                  improving system observability and reducing debugging time
+                  by <b>60%</b>.
+                </li>
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h3 class="timeline-item-title font-bold text-2xl">Digital Juggler, Queensland, Australia</h3>
+              <h4 class="h4 timeline-item-position">Full Stack Developer</h4>
+              <span>Oct 2018 — Sep 2022</span>
+
+              <ul class="timeline-text">
+                <li>
+                  Developed robust backend services with <b>Python</b>,
+                  handling over <b>500,000</b> daily API requests and
+                  increasing processing efficiency by <b>40%</b>.
+                </li>
+                <li>
+                  Constructed microservices with <b>Flask</b> and
+                  <b>Django</b> supporting <b>3+</b> client applications,
+                  reducing feature development time by <b>25%</b>.
+                </li>
+                <li>
+                  Reengineered <b>PHP</b> components, lowering integration
+                  errors by <b>30%</b>.
+                </li>
+                <li>
+                  Provided consulting on <b>Python</b> data processing and
+                  automation using tools like <b>Pandas</b> and <b>NumPy</b>.
+                </li>
+                <li>
+                  Maintained and updated backend services in
+                  <b>Node.js (Express.js)</b>, applying modern practices and
+                  performance enhancements.
+                </li>
+                <li>
+                  Deployed serverless functions with <b>AWS Lambda</b>,
+                  <b>S3</b>, cutting
+                  infrastructure costs by <b>35%</b>.
+                </li>
+                <li>
+                  Mentored and led a team of <b>4</b> junior developers, on
+                  best practices in <b>Python</b>, <b>PHP</b>, and
+                  <b>Node.js</b>, elevating team productivity by <b>20%</b>.
+                </li>
+                <li>
+                  Authored <b>200+</b> test cases using <b>PyTest</b>,
+                  <b>PHPUnit</b>, <b>Mocha</b>, and <b>Chai</b>, improving
+                  code reliability by <b>30%</b> and reducing bugs by
+                  <b>15%</b>.
+                </li>
+                <li>
+                  Partnered with frontend developers, enhancing user
+                  interfaces with <b>React</b>, and
+                  <b>Vue.js</b>, leading to a more cohesive application
+                  experience.
+                </li>
+                <li>
+                  Coordinated with <b>Scrum</b> Master and Product Manager on
+                  sprint planning, daily updates, and problem-solving,
+                  streamlining project execution.
+                </li>
+              </ul>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h3 class="timeline-item-title font-bold text-2xl">CienTX, Hong Kong, China</h3>
+              <h4 class="h4 timeline-item-position">Front End Developer</h4>
+
+              <span>Dec 2015 — Sep 2018</span>
+
+              <ul class="timeline-text">
+                <li>
+                  Crafted dynamic frontend components with
+                  <b>JavaScript</b> frameworks like R<b>eact.js</b>,
+                  <b>Vue.js</b>, boosting user engagement
+                  by <b>35%</b>.
+                </li>
+                <li>
+                  Conducted <b>integration</b>, <b>unit</b>, <b>system</b>,
+                  and <b>stress testing</b>, reducing post-release bugs by
+                  <b>30%</b>.
+                </li>
+              </ul>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h3 class="timeline-item-title font-bold text-2xl">The Hong Kong University of Science and Technology</h3>
+
+              <span>Apr 2011 - Oct 2015</span>
+
+              <p class="timeline-text">
+                Bachelor of Engineering (BEng), Computer Software Engineering (4.42/5)
+              </p>
+
+            </li>
+
+          </ol>
+          
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <div class="skills-categories">
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Language</h4>
+              <ul class="skills-list">
+                <li class="skills-item">C/C++</li>
+                <li class="skills-item">C#</li>
+                <li class="skills-item">Javascript</li>
+                <li class="skills-item">Typescript</li>
+                <li class="skills-item">Python</li>
+                <li class="skills-item">PHP</li>
+                <li class="skills-item">GraphQL</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Frameworks</h4>
+              <ul class="skills-list">
+                <li class="skills-item">Node</li>
+                <li class="skills-item">Express</li>
+                <li class="skills-item">Nest</li>
+                <li class="skills-item">ASP.NET</li>
+                <li class="skills-item">React</li>
+                <li class="skills-item">Next</li>
+                <li class="skills-item">Vue</li>
+                <li class="skills-item">Apollo GraphQL</li>
+                <li class="skills-item">MySQL</li>
+                <li class="skills-item">MongoDB</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Tools</h4>
+              <ul class="skills-list">
+                <li class="skills-item">Git</li>
+                <li class="skills-item">Jira</li>
+                <li class="skills-item">Postman</li>
+                <li class="skills-item">GraphiQL</li>
+                <li class="skills-item">Docker</li>
+                <li class="skills-item">Jest</li>
+                <li class="skills-item">Unit Testing</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Principle</h4>
+              <ul class="skills-list">
+                <li class="skills-item" title="Object Oriented Programming">
+                  OOP
+                </li>
+                <li class="skills-item">Design Patterns</li>
+                <li class="skills-item">SOLID</li>
+                <li class="skills-item" title="Test Driven Development">
+                  TDD
+                </li>
+                <li class="skills-item" title="Don't Repeat Yourself">DRY</li>
+                <li class="skills-item" title="Keep It Simple, Stupid">
+                  KISS
+                </li>
+                <li class="skills-item" title="You Aren't Gonna Need It">
+                  YAGNI
+                </li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">DevOps</h4>
+              <ul class="skills-list">
+                <li class="skills-item">Github Action</li>
+                <li class="skills-item">Jenkins</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Could Services</h4>
+              <ul class="skills-list">
+                <li class="skills-item">AWS S3</li>
+                <li class="skills-item">AWS Amplify</li>
+                <li class="skills-item">Supabase</li>
+                <li class="skills-item">Mongo Cloud</li>
+              </ul>
+            </div>
+
+            <div class="skills-category">
+              <h4 class="h4 skills-header">Soft Skills</h4>
+              <ul class="skills-list">
+                <li class="skills-item">Scum</li>
+                <li class="skills-item">Communication</li>
+                <li class="skills-item">Teamwork</li>
+                <li class="skills-item">Self-planning</li>
+                <li class="skills-item">RnD</li>
+                <li class="skills-item">Critical Thinking</li>
+                <li class="skills-item">Problem Solving</li>
+              </ul>
+            </div>
+          </div>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn="">All</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn="">React</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn="">Next</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn="">Vue</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn="">Other</button>
+            </li>
+          </ul>
+
+          <!-- Project Thumbnail -->
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item="" data-category="react">
+              <a href="#" data-detail-category="gaugepro">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" data-detail-category="gaugepro" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/gaugepro/Screenshot.webp" alt="GaugePro" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-detail-category="gaugepro">
+                  GaugePro
+                </h3>
+
+                <p class="project-category tag">JavaScript</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item="" data-category="next">
+              <a href="#" data-detail-category="ribcat">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" data-detail-category="ribcat" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ribcat/Capture3.PNG" alt="RIBCAT" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-detail-category="ribcat">
+                  RIBCAT
+                </h3>
+
+                <p class="project-category tag">Next</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item="" data-category="vue">
+              <a href="#" data-detail-category="microsystem">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" data-detail-category="microsystem" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/microsystem/Screenshot_1.webp" alt="Microsystem" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-detail-category="microsystem">
+                  Microsystem
+                </h3>
+
+                <p class="project-category tag">JavaScript</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item="" data-category="other">
+              <a href="#" data-detail-category="konstellation">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline" data-detail-category="konstellation" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/konstellation/Screenshot_1.webp" alt="konstellation" loading="lazy">
+                </figure>
+
+                <h3 class="project-title" data-detail-category="konstellation">
+                  konstellation Data Platform
+                </h3>
+
+                <p class="project-category tag">React</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Project Detail GaugePro-->
+        <section class="timeline project-item" data-filter-item="" data-deactive-item="" project-detail="" data-detail-category="gaugepro">
+          <ul class="project-list">
+            <!-- Metame Amusement Park Image -->
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/gaugepro/Screenshot1.webp" loading="lazy" alt="Image">
+                </figure>
+              </a>
+            </div>
+
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/gaugepro/Screenshot2.webp" loading="lazy" alt="Image">
+                </figure>
+              </a>
+            </div>
+
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/gaugepro/Screenshot3.webp" loading="lazy" alt="Image">
+                </figure>
+              </a>
+            </div>
+
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/gaugepro/Screenshot5.webp" loading="lazy" alt="Image">
+                </figure>
+              </a>
+            </div>
+
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/gaugepro/Screenshot6.webp" loading="lazy" alt="Image">
+                </figure>
+              </a>
+            </div>
+          </ul>
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline" role="img" class="md hydrated" aria-label="book outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">GaugePro</h3>
+          </div>
+
+          <ul class="timeline-list">
+            <li class="timeline-item">
+              <span>Feb/2023 — Apr/2024</span>
+              <ul>
+                <li>
+                  <ul class="timeline-description-list">
+                    <li class="timeline-description">
+                      <p class="timeline-text description">
+                        The team consisted of 5 members: 3 working on the
+                        front-end, 1 on the backend, and 1 dedicated tester. I
+                        was responsible for both front-end and backend
+                        development, focusing on optimizing user experience
+                        and ensuring seamless data integration.
+                      </p>
+                    </li>
+                    <li class="timeline-description"></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h1 class="h4 timeline-item-title">Main responsibility:</h1>
+              <ul class="timeline-description-list">
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    User Interface (UI) Development: Designed and implemented
+                    a sleek, user-friendly interface using JavaScript and
+                    Bootstrap, ensuring ease of navigation and an engaging
+                    user experience.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Backend API Integration: Developed and integrated RESTful
+                    APIs using Python and Flask, facilitating smooth
+                    communication between the front-end and backend systems.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Data Visualization: Implemented real-time data
+                    visualization features using Chart.js and other libraries
+                    to help users monitor key metrics, enabling better
+                    decision-making.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Third-Party API Integration: Integrated external APIs such
+                    as Google Analytics for tracking user behavior and Stripe
+                    for secure payment processing.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Database Management: Worked with MySQL to structure the
+                    database and ensure efficient data retrieval, reducing
+                    query response time.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Bug Fixing and Maintenance: Continuously monitored the
+                    system for bugs and resolved issues related to data
+                    inconsistency, API failures, and UI responsiveness.
+                  </p>
+                </li>
+                <li class="timeline-description"></li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h1 class="h4 timeline-item-title">Achievements:</h1>
+              <ul class="timeline-description-list">
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    <strong>Added accept buttons and various hints:</strong>
+                    <br>
+                    Developed a visually appealing and intuitive dashboard,
+                    making complex data easy to understand.
+                    <br>
+                    Integrated interactive charts and real-time data updates
+                    to keep users informed without the need for manual
+                    refreshes.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    <strong>Enhanced Security and Payment Systems:</strong>
+                    <br>
+                    Ensured secure transactions by implementing Stripe for
+                    payment processing, reducing potential payment failures
+                    and improving user trust.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    <strong>Optimized Performance:</strong>
+                    <br>
+                    Improved site performance by reducing load time through
+                    various optimization techniques, including asset
+                    compression and database indexing.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    <strong>Successful Third-Party Integration:</strong>
+                    <br>
+                    Seamlessly integrated APIs such as Google Analytics for
+                    tracking, enhancing site performance metrics and user
+                    insights.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    <strong>Increased Interactivity:</strong>
+                    <br>
+                    Introduced dynamic user interactions through chart and
+                    metric updates, improving user engagement and retention on
+                    the platform.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="timeline-item"></li>
+          </ul>
+
+          <section class="service">
+            <h3 class="h3 service-title"></h3>
+
+            <ul class="service-list">
+              <a class="service-item" target="_blank" href="https://www.gaugepro.io/">
+                <div class="service-icon-box">
+                  <img src="assets/images/icon-dev.svg" alt="Main Website" width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Main Website</h4>
+                </div>
+              </a>
+            </ul>
+          </section>
+        </section>
+        <!-- End Project Detail GaugePro -->
+
+        <!-- Project Detail Ribcat-->
+        <section class="timeline project-item" data-filter-item="" data-deactive-item="" project-detail="" data-detail-category="ribcat">
+          <ul class="project-list">
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/ribcat/Capture1.PNG" loading="lazy" alt="Revive">
+                </figure>
+              </a>
+            </div>
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/ribcat/Capture2.PNG" loading="lazy" alt="Revive">
+                </figure>
+              </a>
+            </div>
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/ribcat/Capture.PNG" loading="lazy" alt="Revive">
+                </figure>
+              </a>
+            </div>
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/ribcat/Capture4.PNG" loading="lazy" alt="Revive">
+                </figure>
+              </a>
+            </div>
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/ribcat/Capture5.PNG" loading="lazy" alt="Revive">
+                </figure>
+              </a>
+            </div>
+          </ul>
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline" role="img" class="md hydrated" aria-label="book outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">RIBCAT</h3>
+          </div>
+
+          <ul class="timeline-list">
+            <li class="timeline-item">
+              <span>Sep/2022 — Mar/2023</span>
+              <ul>
+                <li>
+                  <ul class="timeline-description-list">
+                    <li class="timeline-description">
+                      <p class="timeline-text description">
+                        The team for this project included 6 members: 4
+                        developers working on both front-end and back-end, 1
+                        UI/UX designer, and 1 quality assurance specialist. My
+                        primary responsibilities focused on full-stack
+                        development, ensuring efficient data handling and
+                        improving user interaction.
+                      </p>
+                    </li>
+                    <li class="timeline-description"></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h1 class="h4 timeline-item-title">Main responsibility:</h1>
+              <ul class="timeline-description-list">
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Full-Stack Development: Contributed to both the front-end
+                    (React) and backend (Node.js) to create a seamless,
+                    responsive web application for users.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    UI/UX Implementation: Collaborated with the design team to
+                    implement modern UI components using React and Tailwind
+                    CSS, ensuring an intuitive and consistent user interface.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    API Development &amp; Integration: Built and maintained REST
+                    APIs to handle user requests, data retrieval, and
+                    third-party service integration, ensuring a scalable
+                    architecture.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Performance Optimization: Optimized query handling and
+                    front-end loading speed using lazy loading techniques and
+                    database indexing.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Testing and Debugging: Wrote unit and integration tests to
+                    ensure smooth functionality across various modules and
+                    actively participated in debugging sessions to resolve
+                    complex issues.
+                  </p>
+                </li>
+                <li class="timeline-description"></li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h1 class="h4 timeline-item-title">Achievements:</h1>
+              <ul class="timeline-description-list">
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Worked on dynamic, responsive designs using Tailwind CSS,
+                    which improved accessibility and provided a more engaging
+                    interface.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Developed highly efficient backend data handling
+                    processes, reducing server response time and improving
+                    overall system performance.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Seamlessly integrated payment gateways and external APIs,
+                    providing additional functionality and enhancing the
+                    overall feature set of the platform.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="timeline-description"></li>
+          </ul>
+
+          <section class="service">
+            <h3 class="h3 service-title"></h3>
+
+            <ul class="service-list">
+              <a class="service-item" target="_blank" href="https://ribcat.de/">
+                <div class="service-icon-box">
+                  <img src="assets/images/icon-dev.svg" alt="Main Website" width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Main Website</h4>
+                </div>
+              </a>
+            </ul>
+          </section>
+        </section>
+        <!-- End Project Detail Ribcat -->
+
+        <!-- Project Detail Microsystem-->
+        <section class="timeline project-item" data-filter-item="" data-deactive-item="" project-detail="" data-detail-category="microsystem">
+          <ul class="project-list">
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/microsystem/Screenshot_2.webp" loading="lazy" alt="microsystem">
+                </figure>
+              </a>
+            </div>
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/microsystem/Screenshot_3.webp" loading="lazy" alt="microsystem">
+                </figure>
+              </a>
+            </div>
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/microsystem/Screenshot_4.webp" loading="lazy" alt="microsystem">
+                </figure>
+              </a>
+            </div>
+          </ul>
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline" role="img" class="md hydrated" aria-label="book outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Hotspot Microsystem Application</h3>
+          </div>
+
+          <ul class="timeline-list">
+            <li class="timeline-item">
+              <span>Jan/2022 — Sep/2022</span>
+              <ul>
+                <li>
+                  <ul class="timeline-description-list">
+                    <li class="timeline-description">
+                      <p class="timeline-text description">
+                        The project team consisted of 4 members: 2 developers
+                        working on the front-end and backend, 1 UI/UX
+                        designer, and 1 system administrator. I contributed to
+                        the development of the system as a full-stack
+                        engineer, with a focus on performance optimization and
+                        security enhancements.
+                      </p>
+                    </li>
+                    <li class="timeline-description"></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h1 class="h4 timeline-item-title">Main responsibility:</h1>
+              <ul class="timeline-description-list">
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Full-Stack Development: Developed both the front-end
+                    (JavaScript) and backend (Node.js, Express) to deliver a
+                    fast, responsive, and user-friendly web application.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    UI/UX Improvements: Collaborated with designers to
+                    implement a clean, modern user interface using React and
+                    Tailwind CSS, ensuring an intuitive and visually appealing
+                    experience.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    API Integration: Developed and integrated RESTful APIs to
+                    enable smooth communication between the front-end and
+                    backend, ensuring reliable data flow and efficient
+                    performance.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    System Testing &amp; Debugging: Collaborated with the QA team
+                    to test for bugs, fix issues, and ensure smooth deployment
+                    with minimal downtime.
+                  </p>
+                </li>
+                <li class="timeline-description"></li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h1 class="h4 timeline-item-title">Achievements:</h1>
+              <ul class="timeline-description-list">
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Optimized the backend and database operations, reducing
+                    server response time by 40%, leading to faster page load
+                    times and improved user satisfaction.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Implemented a responsive and accessible design, allowing
+                    users to easily navigate the platform on both desktop and
+                    mobile devices.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Successfully integrated a secure payment gateway, enabling
+                    users to complete transactions with ease and confidence.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="timeline-description"></li>
+          </ul>
+
+          <section class="service">
+            <h3 class="h3 service-title"></h3>
+
+            <ul class="service-list">
+              <a class="service-item" target="_blank" href="https://hotspot.microsystem.com.eg/">
+                <div class="service-icon-box">
+                  <img src="assets/images/icon-dev.svg" alt="Main Website" width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Main Website</h4>
+                </div>
+              </a>
+            </ul>
+          </section>
+        </section>
+        <!-- End Project Detail Microsystem -->
+
+        <!-- Project Detail Konstellation-->
+        <section class="timeline project-item" data-filter-item="" data-deactive-item="" project-detail="" data-detail-category="konstellation">
+          <ul class="project-list">
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/konstellation/Screenshot_2.webp" loading="lazy" alt="konstellation">
+                </figure>
+              </a>
+            </div>
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/konstellation/Screenshot_3.webp" loading="lazy" alt="konstellation">
+                </figure>
+              </a>
+            </div>
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/konstellation/Screenshot_4.webp" loading="lazy" alt="konstellation">
+                </figure>
+              </a>
+            </div>
+            <div class="project-item active">
+              <a onclick="expandImage(this)">
+                <figure class="project-img">
+                  <img src="./assets/images/konstellation/Screenshot_5.webp" loading="lazy" alt="konstellation">
+                </figure>
+              </a>
+            </div>
+          </ul>
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline" role="img" class="md hydrated" aria-label="book outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Konstellation Data Platform</h3>
+          </div>
+
+          <ul class="timeline-list">
+            <li class="timeline-item">
+              <span>Apr/2021 — Nov/2021</span>
+              <ul>
+                <li>
+                  <ul class="timeline-description-list">
+                    <li class="timeline-description">
+                      <p class="timeline-text description">
+                        The team for this project included 4 developers, 1
+                        data scientist, and 1 UI/UX designer. My role focused
+                        on full-stack development and data integration to
+                        enhance the platform’s data management and
+                        visualization capabilities.
+                      </p>
+                    </li>
+                    <li class="timeline-description"></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h1 class="h4 timeline-item-title">Main responsibility:</h1>
+              <ul class="timeline-description-list">
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Full-Stack Development: Developed and maintained both the
+                    front-end (React, Tailwind CSS) and backend (Node.js,
+                    Express) to create a smooth and responsive user
+                    experience.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Data Integration: Worked closely with the data science
+                    team to integrate large-scale data processing pipelines
+                    and APIs for data retrieval and visualization.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Data Visualization: Implemented dynamic and interactive
+                    data visualizations using libraries like D3.js and
+                    Chart.js, enabling users to gain insights from complex
+                    datasets.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Testing &amp; Maintenance: Conducted system-wide testing,
+                    identified and resolved bugs, and ensured the stability of
+                    the platform through regular maintenance.
+                  </p>
+                </li>
+                <li class="timeline-description"></li>
+              </ul>
+            </li>
+
+            <li class="timeline-item">
+              <h1 class="h4 timeline-item-title">Achievements:</h1>
+              <ul class="timeline-description-list">
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Implemented optimized data pipelines that improved data
+                    retrieval and processing speed by 30%, enabling users to
+                    access real-time insights with minimal delay.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Designed and integrated interactive charts and graphs,
+                    making it easier for users to analyze complex datasets and
+                    derive actionable insights.
+                  </p>
+                </li>
+                <li class="timeline-description">
+                  <p class="timeline-text description">
+                    Significantly reduced page load times and increased
+                    overall system efficiency by implementing server-side
+                    optimizations and database indexing.
+                  </p>
+                </li>
+              </ul>
+            </li>
+            <li class="timeline-description"></li>
+          </ul>
+
+          <section class="service">
+            <h3 class="h3 service-title"></h3>
+
+            <ul class="service-list">
+              <a class="service-item" href="https://konstellationdata.com/">
+                <div class="service-icon-box">
+                  <img src="assets/images/icon-dev.svg" alt="Main Website" width="40">
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Main Website</h4>
+                </div>
+              </a>
+            </ul>
+          </section>
+        </section>
+        <!-- End Project Detail Microsystem -->
+
+        <!--
+      - #CONTACT
+    -->
+      </article>
+
+      <article class="portfolio" data-page="certificate">
+        <header>
+          <h2 class="h2 article-title">Certificate</h2>
+        </header>
+
+        <ul class="project-list">
+          <li class="project-item active">
+            <a target="_blank" href="https://drive.google.com/file/d/1NZgXxQ2NsZpLnR9soZOD6ngGZJHwu4bF/view?usp=drive_link">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/certificates/AWS_Certificate.webp" alt="Certificate_FullStack" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">AWS Certificate</h3>
+
+              <p class="project-category tag">Feb/2024</p>
+            </a>
+          </li>
+          <li class="project-item active">
+            <a target="_blank" href="https://drive.google.com/file/d/17lC1vl5bmLTCMCnEakda_jJeD7NAxzep/view?usp=drive_link">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/certificates/Full_Stack_Certificate.webp" alt="Certificate_Vue" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Full Stack Engineer</h3>
+
+              <p class="project-category tag">Oct/2024</p>
+            </a>
+          </li>
+          <li class="project-item active">
+            <a target="_blank" href="https://drive.google.com/file/d/1h09zAx2qvTgmTK0ahZcVwmFcYpMh7fF5/view?usp=drive_link">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/certificates/Vue_Certificate.webp" alt="Certificate_English" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">Vue Developer Level 1</h3>
+
+              <p class="project-category tag">May/2024</p>
+            </a>
+          </li>
+          <li class="project-item active">
+            <a target="_blank" href="https://drive.google.com/file/d/12A2oTq7zTyKmt4604OEAgcEhedL1K0w3/view?usp=drive_link">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline" role="img" class="md hydrated" aria-label="eye outline"></ion-icon>
+                </div>
+
+                <img src="./assets/images/certificates/English_Certificate.webp" alt="Certificate_Laravel" loading="lazy">
+              </figure>
+
+              <h3 class="project-title">CI Advanced English Level</h3>
+
+              <p class="project-category tag">Jan/2023</p>
+            </a>
+          </li>
+        </ul>
+      </article>
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3836.7148280577876!2d-48.05750642431477!3d-15.924004026161004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2c90ad395461%3A0x6f6bce6ca7721cae!2sRecanto%20das%20Emas%2C%20Brasilia%20-%20Federal%20District%2C%2072650-455%2C%20Brazil!5e0!3m2!1sen!2sus!4v1731801947695!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </figure>
+        </section>
+
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <input type="hidden" name="access_key" value="e2e13dea-21ba-444e-ab13-1144052169ad">
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
